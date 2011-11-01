@@ -1,7 +1,5 @@
 var plask = require('plask');
 
-
-
 function Stats(width, height){
     var _time = Date.now()
     ,   _timeLastFrame = _time
