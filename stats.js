@@ -1,6 +1,6 @@
 var plask = require('plask');
 
-function Stats(width, height){
+exports.Stats = function(width, height){
     var _time = Date.now()
     ,   _timeLastFrame = _time
     ,   _timeLastSecond = _time
@@ -84,5 +84,4 @@ function Stats(width, height){
 
         return this;
     };
-}
-exports.Stats = Stats;
+};
