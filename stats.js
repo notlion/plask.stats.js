@@ -34,10 +34,10 @@ exports.Stats = function(width, height){
             _fpsLog.shift();
             _fpsLog.push(_fps);
 
-            _canvas.drawColor(24,12,36,255);
+            _canvas.drawColor(24, 12, 36, 255);
 
             var yPos = Math.floor(_padding + (_fontSize * 0.75));
-            _paint.setColor(0,255,255,255);
+            _paint.setColor(0, 255, 255, 255);
             _paint.setStyle(_paint.kFillStyle);
             _paint.setFlags(_paint.kAntiAliasFlag);
             _canvas.drawText(_paint, _fps + " FPS", _padding, yPos);
