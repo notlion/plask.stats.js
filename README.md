@@ -7,15 +7,15 @@ Only FPS mode works for now..
 
 ```javascript
 var plask = require('plask');
-var stats = require('./stats');
+var stats = require('plask-stats');
 
 plask.simpleWindow({
-    init: function(){
-        this.framerate(60);
-        this.stats = new stats.Stats(100, 60).open();
-    },
-    draw: function(){
-        this.stats.update();
-    }
+  init: function(){
+    this.framerate(60);
+    this.stats = new stats.Stats(100, 60).open();
+  },
+  draw: function(){
+    this.stats.update();
+  }
 });
 ```
